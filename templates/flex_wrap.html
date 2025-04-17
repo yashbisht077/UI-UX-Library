@@ -1,0 +1,350 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div class="container">
+        
+    <h1> Flex-Wrap in Modern Layouts</h1>
+    <hr class="mt-1">
+    <p>
+        This page demonstrates the practical use of the CSS flex-wrap property in different scenarios. Each example
+        shows how items behave when wrapped, not wrapped, wrapped in reverse, or combined with other Flexbox properties
+        like justify-content or flex-direction.
+
+        It serves as a visual guide and code reference for understanding how flex containers react when content exceeds
+        the size of the container.</p>
+
+    <div class="container">
+        <h3>Basic flex-wrap Example</h3>
+        <p>Introduces flex-wrap, which controls how flex items behave when they overflow the container. Items wrap onto
+            multiple lines rather than overflowing.</p>
+
+        <div class="container bg-prussian-blue  " style="border: 5px solid #003049;">
+            <div class=" display-flex flex-col flex-wrap gap-1 m-0 p-0  w-90p h-25">
+                <div class="bg-b5fccd w-8 h-8"></div>
+                <div class="bg-7AC6D2 w-8 h-8"></div>
+                <div class="bg-3D90D7 w-8 h-8"></div>
+                <div class="bg-3674B5 w-8 h-8"></div>
+                <div class="bg-3A59D1 w-8 h-8"></div>
+
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="display-flex justify-space-between mb-0.5">
+                <h4>HTML</h4>
+                <div>
+                    <form action="{{ url_for('live') }}" method="post">
+                        <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue' style='border: 5px solid #003049;'>
+    <div class='display-flex flex-col flex-wrap gap-1 m-0 p-0 w-90p h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8'></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>
+</div>
+
+                        ">
+
+
+                        <div class="display-flex justify-space-evenly  ">
+                            <button type="submit" class="copy-code">
+                                <h4 class="mr-2">Live</h4>
+                            </button>
+
+                            <a class="copy-code ">
+                                <h4 class="mr-2 ">Copy</h4>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <pre><code class="language-html">
+&lt;div class="container bg-prussian-blue"&gt; 
+    &lt;div class="display-flex flex-col flex-wrap gap-1 m-0 p-0 w-90p h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+            </div>
+        </div>
+        <div>
+            <h3>flex: nowrap</h3>
+            <p> This prevents wrapping even if items overflow the container. All items are forced to stay in a single
+                row or column, possibly overflowing.</p>
+
+            <div class="container bg-prussian-blue   " style="border: 5px solid #003049;">
+                <div class=" display-flex flex-col  flex-nowrap m-0 p-0 w-90p h-25">
+                    <div class="bg-b5fccd w-8 h-8"></div>
+                    <div class="bg-7AC6D2 w-8 h-8"></div>
+                    <div class="bg-3D90D7 w-8 h-8"></div>
+                    <div class="bg-3674B5 w-8 h-8"></div>
+                    <div class="bg-3A59D1 w-8 h-8"></div>
+
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="display-flex justify-space-between mb-0.5">
+                    <h4>HTML</h4>
+                    <div>
+                        <form action="{{ url_for('live') }}" method="post">
+                            <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue' style='border: 5px solid #003049;'>
+    <div class='display-flex flex-col flex-nowrap m-0 p-0 w-90p h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8'></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>
+</div>
+
+
+                        ">
+
+
+                            <div class="display-flex justify-space-evenly  ">
+                                <button type="submit" class="copy-code">
+                                    <h4 class="mr-2">Live</h4>
+                                </button>
+
+                                <a class="copy-code ">
+                                    <h4 class="mr-2 ">Copy</h4>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <pre><code>
+&lt;div class="container bg-prussian-blue"&gt; 
+    &lt;div class="display-flex flex-col flex-nowrap m-0 p-0 w-90p h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+                </div>
+
+            </div>
+
+
+            <div>
+                <h3>flex-wrap: reverse</h3>
+                <p>Items wrap, but in the reverse order. This can be used for mirrored or inverted layouts where new
+                    items appear at the start instead of the end.</p>
+
+                <div class="container bg-prussian-blue   " style="border: 5px solid #003049;">
+                    <div class=" display-flex flex-col flex-wrap-reverse m-0 p-0 w-90p h-25">
+                        <div class="bg-b5fccd w-8 h-8"></div>
+                        <div class="bg-7AC6D2 w-8 h-8"></div>
+                        <div class="bg-3D90D7 w-8 h-8"></div>
+                        <div class="bg-3674B5 w-8 h-8"></div>
+                        <div class="bg-3A59D1 w-8 h-8"></div>
+
+                    </div>
+                </div>
+                <div class="container mt-2">
+                    <div class="display-flex justify-space-between mb-0.5">
+                        <h4>HTML</h4>
+                        <div>
+                            <form action="{{ url_for('live') }}" method="post">
+                                <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue' style='border: 5px solid #003049;'>
+    <div class='display-flex flex-col flex-wrap-reverse m-0 p-0 w-90p h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8'></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>
+</div>
+
+
+                        ">
+
+
+                                <div class="display-flex justify-space-evenly  ">
+                                    <button type="submit" class="copy-code">
+                                        <h4 class="mr-2">Live</h4>
+                                    </button>
+
+                                    <a class="copy-code ">
+                                        <h4 class="mr-2 ">Copy</h4>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <pre><code>
+&lt;div class="container bg-prussian-blue"&gt; 
+    &lt;div class="display-flex flex-col flex-wrap-reverse m-0 p-0 w-90p h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+                    </div>
+                </div>
+                <div>
+                    <h3>justify-content: space-evenly + flex-wrap-reverse</h3>
+                    <p> Combines reverse wrapping with even spacing between elements. This layout ensures equal gaps
+                        between all items and wraps in reverse.</p>
+
+                    <div class="container bg-prussian-blue " style="border: 5px solid #003049;">
+                        <div class="display-flex flex-col justify-space-evenly flex-wrap-reverse m-0 p-0 w-90p h-25">
+                            <div class="bg-b5fccd w-8 h-8"></div>
+                            <div class="bg-7AC6D2 w-8 h-8"></div>
+                            <div class="bg-3D90D7 w-8 h-8"></div>
+                            <div class="bg-3674B5 w-8 h-8"></div>
+                            <div class="bg-3A59D1 w-8 h-8"></div>
+                        </div>
+                    </div>
+                    <div class="container mt-2">
+                        <div class="display-flex justify-space-between mb-0.5">
+                            <h4>HTML</h4>
+                            <div>
+                                <form action="{{ url_for('live') }}" method="post">
+                                    <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue' style='border: 5px solid #003049;'>
+    <div class='display-flex flex-col justify-space-evenly flex-wrap-reverse m-0 p-0 w-90p h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8'></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>
+</div>
+
+
+                        ">
+
+
+                                    <div class="display-flex justify-space-evenly  ">
+                                        <button type="submit" class="copy-code">
+                                            <h4 class="mr-2">Live</h4>
+                                        </button>
+
+                                        <a class="copy-code ">
+                                            <h4 class="mr-2 ">Copy</h4>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <pre><code>
+&lt;div class="container bg-prussian-blue"&gt; 
+    &lt;div class="display-flex flex-col justify-space-evenly flex-wrap-reverse m-0 p-0 w-90p h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h3>flex-direction: row + flex-wrap-reverse</h3>
+                        <p>Reverses the wrap direction while maintaining row-wise alignment. Ideal for horizontal
+                            layouts where items should wrap from right to left or bottom to top.</p>
+
+                        <div class="container bg-prussian-blue " style="border: 5px solid #003049;">
+                            <div class="display-flex flex-row flex-wrap-reverse m-0 p-0 w-90p h-25">
+                                <div class="bg-b5fccd w-8 h-8"></div>
+                                <div class="bg-7AC6D2 w-8 h-8"></div>
+                                <div class="bg-3D90D7 w-8 h-8"></div>
+                                <div class="bg-3674B5 w-8 h-8"></div>
+                                <div class="bg-3A59D1 w-8 h-8"></div>
+                            </div>
+                        </div>
+                        <div class="container mt-2">
+                            <div class="display-flex justify-space-between mb-0.5">
+                                <h4>HTML</h4>
+                                <div>
+                                    <form action="{{ url_for('live') }}" method="post">
+                                        <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue' style='border: 5px solid #003049;'>
+    <div class='display-flex flex-row flex-wrap-reverse m-0 p-0 w-90p h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8'></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>
+</div>
+
+
+
+                        ">
+
+                                        <div class="display-flex justify-space-evenly  ">
+                                            <button type="submit" class="copy-code">
+                                                <h4 class="mr-2">Live</h4>
+                                            </button>
+
+                                            <a class="copy-code ">
+                                                <h4 class="mr-2 ">Copy</h4>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <hr>
+                            <div>
+                                <pre><code>
+&lt;div class="container bg-prussian-blue"&gt; 
+    &lt;div class="display-flex flex-row flex-wrap-reverse m-0 p-0 w-90p h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    {% endblock content %}
+
+
+                    <link rel="stylesheet" href="../static/nav_mode.css">
+                    <link rel="stylesheet" href="../static/display.css">
+                    <link rel="stylesheet" href="../static/background.css">
+                        <link rel="stylesheet" href="../static/color.css">
+                        <link rel="stylesheet" href="../static/display.css">
+                        <link rel="stylesheet" href="../static/mar_pad_rem.css">
+                        <link rel="stylesheet" href="../static/grid/grid_row_col_st.css">
+                        <link rel="stylesheet" href="../static/new_grid.css">
+                        <link rel="stylesheet" href="../static/container.css">
+                        <link rel="stylesheet" href="../static/form.css">

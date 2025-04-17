@@ -1,0 +1,704 @@
+.hover-color-darkslategray:hover {
+    background-color: #2F4F4F;
+    color: #FFFFFF;
+}
+
+.hover-color-dimgray:hover {
+    background-color: #696969;
+    color: #FFFFFF;
+}
+
+.hover-color-lightgray:hover {
+    background-color: #D3D3D3;
+    color: #000000;
+}
+
+.hover-color-midnightblue:hover {
+    background-color: #191970;
+    color: #FFFFFF;
+}
+
+.hover-color-slateblue:hover {
+    background-color: #6A5ACD;
+    color: #FFFFFF;
+}
+
+.hover-color-lightsteelblue:hover {
+    background-color: #B0C4DE;
+    color: #000000;
+}
+
+.hover-color-deeppink:hover {
+    background-color: #FF1493;
+    color: #FFFFFF;
+}
+
+.hover-color-salmon:hover {
+    background-color: #FA8072;
+    color: #FFFFFF;
+}
+
+.hover-color-tomato:hover {
+    background-color: #FF6347;
+    color: #FFFFFF;
+}
+
+.hover-color-sienna:hover {
+    background-color: #A0522D;
+    color: #FFFFFF;
+}
+
+.hover-color-darkorange:hover {
+    background-color: #FF8C00;
+    color: #FFFFFF;
+}
+
+.hover-color-mediumvioletred:hover {
+    background-color: #C71585;
+    color: #FFFFFF;
+}
+
+.hover-color-palegreen:hover {
+    background-color: #98FB98;
+    color: #000000;
+}
+
+.hover-color-aquamarine:hover {
+    background-color: #7FFFD4;
+    color: #000000;
+}
+
+.hover-color-lightseagreen:hover {
+    background-color: #20B2AA;
+    color: #FFFFFF;
+}
+
+.hover-color-darkturquoise:hover {
+    background-color: #00CED1;
+    color: #FFFFFF;
+}
+
+.hover-color-steelblue:hover {
+    background-color: #4682B4;
+    color: #FFFFFF;
+}
+
+.hover-color-cadetblue:hover {
+    background-color: #5F9EA0;
+    color: #FFFFFF;
+}
+
+.hover-color-thistle:hover {
+    background-color: #D8BFD8;
+    color: #000000;
+}
+
+.hover-color-aliceblue:hover {
+    background-color: #F0F8FF;
+    color: #000000;
+}
+
+.hover-color-antiquewhite:hover {
+    background-color: #FAEBD7;
+    color: #000000;
+}
+
+.hover-color-aqua:hover {
+    background-color: #00FFFF;
+    color: #000000;
+}
+
+.hover-color-azure:hover {
+    background-color: #F0FFFF;
+    color: #000000;
+}
+
+.hover-color-beige:hover {
+    background-color: #F5F5DC;
+    color: #000000;
+}
+
+.hover-color-bisque:hover {
+    background-color: #FFE4C4;
+    color: #000000;
+}
+
+.hover-color-black:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.hover-color-blanchedalmond:hover {
+    background-color: #FFEBCD;
+    color: #000000;
+}
+
+.hover-color-blue:hover {
+    background-color: #0000FF;
+    color: #FFFFFF;
+}
+
+.hover-color-blueviolet:hover {
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+}
+
+.hover-color-brown:hover {
+    background-color: #A52A2A;
+    color: #FFFFFF;
+}
+
+.hover-color-burlywood:hover {
+    background-color: #DEB887;
+    color: #000000;
+}
+
+.hover-color-chartreuse:hover {
+    background-color: #7FFF00;
+    color: #000000;
+}
+
+.hover-color-chocolate:hover {
+    background-color: #D2691E;
+    color: #FFFFFF;
+}
+
+.hover-color-coral:hover {
+    background-color: #FF7F50;
+    color: #FFFFFF;
+}
+
+.hover-color-cornflowerblue:hover {
+    background-color: #6495ED;
+    color: #FFFFFF;
+}
+
+.hover-color-cornsilk:hover {
+    background-color: #FFF8DC;
+    color: #000000;
+}
+
+.hover-color-crimson:hover {
+    background-color: #DC143C;
+    color: #FFFFFF;
+}
+
+.hover-color-cyan:hover {
+    background-color: #00FFFF;
+    color: #000000;
+}
+
+.hover-color-darkblue:hover {
+    background-color: #00008B;
+    color: #FFFFFF;
+}
+
+.hover-color-darkcyan:hover {
+    background-color: #008B8B;
+    color: #FFFFFF;
+}
+
+.hover-color-darkgoldenrod:hover {
+    background-color: #B8860B;
+    color: #FFFFFF;
+}
+
+.hover-color-darkgray:hover {
+    background-color: #A9A9A9;
+    color: #FFFFFF;
+}
+
+.hover-color-darkgreen:hover {
+    background-color: #006400;
+    color: #FFFFFF;
+}
+
+.hover-color-darkkhaki:hover {
+    background-color: #BDB76B;
+    color: #FFFFFF;
+}
+
+.hover-color-darkmagenta:hover {
+    background-color: #8B008B;
+    color: #FFFFFF;
+}
+
+.hover-color-darkolivegreen:hover {
+    background-color: #556B2F;
+    color: #FFFFFF;
+}
+
+.hover-color-darkorchid:hover {
+    background-color: #9932CC;
+    color: #FFFFFF;
+}
+
+.hover-color-darkred:hover {
+    background-color: #8B0000;
+    color: #FFFFFF;
+}
+
+.hover-color-darksalmon:hover {
+    background-color: #E9967A;
+    color: #FFFFFF;
+}
+
+.hover-color-darkseagreen:hover {
+    background-color: #8FBC8F;
+    color: #FFFFFF;
+}
+
+.hover-color-darkslateblue:hover {
+    background-color: #483D8B;
+    color: #FFFFFF;
+}
+
+.hover-color-darkviolet:hover {
+    background-color: #9400D3;
+    color: #FFFFFF;
+}
+
+.hover-color-deepskyblue:hover {
+    background-color: #00BFFF;
+    color: #FFFFFF;
+}
+
+.hover-color-dodgerblue:hover {
+    background-color: #1E90FF;
+    color: #FFFFFF;
+}
+
+.hover-color-firebrick:hover {
+    background-color: #B22222;
+    color: #FFFFFF;
+}
+
+.hover-color-floralwhite:hover {
+    background-color: #FFFAF0;
+    color: #000000;
+}
+
+.hover-color-forestgreen:hover {
+    background-color: #228B22;
+    color: #FFFFFF;
+}
+
+.hover-color-fuchsia:hover {
+    background-color: #FF00FF;
+    color: #FFFFFF;
+}
+
+.hover-color-gainsboro:hover {
+    background-color: #DCDCDC;
+    color: #000000;
+}
+
+.hover-color-ghostwhite:hover {
+    background-color: #F8F8FF;
+    color: #000000;
+}
+
+.hover-color-gold:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+.hover-color-goldenrod:hover {
+    background-color: #DAA520;
+    color: #FFFFFF;
+}
+
+.hover-color-gray:hover {
+    background-color: #808080;
+    color: #FFFFFF;
+}
+
+.hover-color-green:hover {
+    background-color: #008000;
+    color: #FFFFFF;
+}
+
+.hover-color-greenyellow:hover {
+    background-color: #ADFF2F;
+    color: #000000;
+}
+
+.hover-color-honeydew:hover {
+    background-color: #F0FFF0;
+    color: #000000;
+}
+
+.hover-color-hotpink:hover {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+}
+
+.hover-color-indianred:hover {
+    background-color: #CD5C5C;
+    color: #FFFFFF;
+}
+
+.hover-color-indigo:hover {
+    background-color: #4B0082;
+    color: #FFFFFF;
+}
+
+.hover-color-ivory:hover {
+    background-color: #FFFFF0;
+    color: #000000;
+}
+
+.hover-color-khaki:hover {
+    background-color: #F0E68C;
+    color: #000000;
+}
+
+.hover-color-lavender:hover {
+    background-color: #E6E6FA;
+    color: #000000;
+}
+
+.hover-color-lavenderblush:hover {
+    background-color: #FFF0F5;
+    color: #000000;
+}
+
+.hover-color-lawngreen:hover {
+    background-color: #7CFC00;
+    color: #000000;
+}
+
+.hover-color-lemonchiffon:hover {
+    background-color: #FFFACD;
+    color: #000000;
+}
+
+.hover-color-lightblue:hover {
+    background-color: #ADD8E6;
+    color: #000000;
+}
+
+.hover-color-lightcoral:hover {
+    background-color: #F08080;
+    color: #FFFFFF;
+}
+
+.hover-color-lightcyan:hover {
+    background-color: #E0FFFF;
+    color: #000000;
+}
+
+.hover-color-lightgoldenrodyellow:hover {
+    background-color: #FAFAD2;
+    color: #000000;
+}
+
+.hover-color-lightpink:hover {
+    background-color: #FFB6C1;
+    color: #000000;
+}
+
+.hover-color-lightsalmon:hover {
+    background-color: #FFA07A;
+    color: #FFFFFF;
+}
+
+.hover-color-lightskyblue:hover {
+    background-color: #87CEFA;
+    color: #000000;
+}
+
+.hover-color-lightslategray:hover {
+    background-color: #778899;
+    color: #FFFFFF;
+}
+
+.hover-color-lightyellow:hover {
+    background-color: #FFFFE0;
+    color: #000000;
+}
+
+.hover-color-lime:hover {
+    background-color: #00FF00;
+    color: #000000;
+}
+
+.hover-color-limegreen:hover {
+    background-color: #32CD32;
+    color: #000000;
+}
+
+.hover-color-linen:hover {
+    background-color: #FAF0E6;
+    color: #000000;
+}
+
+.hover-color-magenta:hover {
+    background-color: #FF00FF;
+    color: #FFFFFF;
+}
+
+.hover-color-maroon:hover {
+    background-color: #800000;
+    color: #FFFFFF;
+}
+
+.hover-color-mediumaquamarine:hover {
+    background-color: #66CDAA;
+    color: #000000;
+}
+
+.hover-color-mediumblue:hover {
+    background-color: #0000CD;
+    color: #FFFFFF;
+}
+
+.hover-color-mediumorchid:hover {
+    background-color: #BA55D3;
+    color: #FFFFFF;
+}
+
+.hover-color-mediumpurple:hover {
+    background-color: #9370DB;
+    color: #FFFFFF;
+}
+
+.hover-color-mediumseagreen:hover {
+    background-color: #3CB371;
+    color: #FFFFFF;
+}
+
+.hover-color-mediumslateblue:hover {
+    background-color: #7B68EE;
+    color: #FFFFFF;
+}
+
+.hover-color-mediumspringgreen:hover {
+    background-color: #00FA9A;
+    color: #000000;
+}
+
+.hover-color-mediumturquoise:hover {
+    background-color: #48D1CC;
+    color: #000000;
+}
+
+.hover-color-mintcream:hover {
+    background-color: #F5FFFA;
+    color: #000000;
+}
+
+.hover-color-mistyrose:hover {
+    background-color: #FFE4E1;
+    color: #000000;
+}
+
+.hover-color-moccasin:hover {
+    background-color: #FFE4B5;
+    color: #000000;
+}
+
+.hover-color-navajowhite:hover {
+    background-color: #FFDEAD;
+    color: #000000;
+}
+
+.hover-color-navy:hover {
+    background-color: #000080;
+    color: #FFFFFF;
+}
+
+.hover-color-oldlace:hover {
+    background-color: #FDF5E6;
+    color: #000000;
+}
+
+.hover-color-olive:hover {
+    background-color: #808000;
+    color: #FFFFFF;
+}
+
+.hover-color-olivedrab:hover {
+    background-color: #6B8E23;
+    color: #FFFFFF;
+}
+
+.hover-color-orange:hover {
+    background-color: #FFA500;
+    color: #FFFFFF;
+}
+
+.hover-color-orangered:hover {
+    background-color: #FF4500;
+    color: #FFFFFF;
+}
+
+.hover-color-orchid:hover {
+    background-color: #DA70D6;
+    color: #FFFFFF;
+}
+
+.hover-color-palegoldenrod:hover {
+    background-color: #EEE8AA;
+    color: #000000;
+}
+
+.hover-color-paleturquoise:hover {
+    background-color: #AFEEEE;
+    color: #000000;
+}
+
+.hover-color-palevioletred:hover {
+    background-color: #DB7093;
+    color: #FFFFFF;
+}
+
+.hover-color-papayawhip:hover {
+    background-color: #FFEFD5;
+    color: #000000;
+}
+
+.hover-color-peachpuff:hover {
+    background-color: #FFDAB9;
+    color: #000000;
+}
+
+.hover-color-peru:hover {
+    background-color: #CD853F;
+    color: #FFFFFF;
+}
+
+.hover-color-pink:hover {
+    background-color: #FFC0CB;
+    color: #000000;
+}
+
+.hover-color-plum:hover {
+    background-color: #DDA0DD;
+    color: #000000;
+}
+
+.hover-color-powderblue:hover {
+    background-color: #B0E0E6;
+    color: #000000;
+}
+
+.hover-color-purple:hover {
+    background-color: #800080;
+    color: #FFFFFF;
+}
+
+.hover-color-rebeccapurple:hover {
+    background-color: #663399;
+    color: #FFFFFF;
+}
+
+.hover-color-red:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.hover-color-rosybrown:hover {
+    background-color: #BC8F8F;
+    color: #FFFFFF;
+}
+
+.hover-color-royalblue:hover {
+    background-color: #4169E1;
+    color: #FFFFFF;
+}
+
+.hover-color-saddlebrown:hover {
+    background-color: #8B4513;
+    color: #FFFFFF;
+}
+
+.hover-color-sandybrown:hover {
+    background-color: #F4A460;
+    color: #FFFFFF;
+}
+
+.hover-color-seagreen:hover {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+}
+
+.hover-color-seashell:hover {
+    background-color: #FFF5EE;
+    color: #000000;
+}
+
+.hover-color-silver:hover {
+    background-color: #C0C0C0;
+    color: #000000;
+}
+
+.hover-color-skyblue:hover {
+    background-color: #87CEEB;
+    color: #000000;
+}
+
+.hover-color-slategray:hover {
+    background-color: #708090;
+    color: #FFFFFF;
+}
+
+.hover-color-snow:hover {
+    background-color: #FFFAFA;
+    color: #000000;
+}
+
+.hover-color-springgreen:hover {
+    background-color: #00FF7F;
+    color: #000000;
+}
+
+.hover-color-tan:hover {
+    background-color: #D2B48C;
+    color: #FFFFFF;
+}
+
+.hover-color-teal:hover {
+    background-color: #008080;
+    color: #FFFFFF;
+}
+
+.hover-color-turquoise:hover {
+    background-color: #40E0D0;
+    color: #000000;
+}
+
+.hover-color-violet:hover {
+    background-color: #EE82EE;
+    color: #000000;
+}
+
+.hover-color-wheat:hover {
+    background-color: #F5DEB3;
+    color: #000000;
+}
+
+.hover-color-white:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.hover-color-whitesmoke:hover {
+    background-color: #F5F5F5;
+    color: #000000;
+}
+
+.hover-color-yellow:hover {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+.hover-color-yellowgreen:hover {
+    background-color: #9ACD32;
+    color: #000000;
+}
+
+.hover-color-#F0F8FF:hover {
+    background-color: #F0F8FF;
+    color: #000000;
+}

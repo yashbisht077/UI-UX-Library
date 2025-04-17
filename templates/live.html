@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/background.css">
+    <link rel="stylesheet" href="../static/color.css">
+    <link rel="stylesheet" href="../static/mar_pad.css">
+    <title>Live HTML Preview</title>
+    
+</head>
+<body class="bg-gray">
+    <div >
+        <div class="container split-screen">
+            <div class="left" >
+                <label for="live_code">CODE</label>
+                <textarea id="live_code" class="bg-gray " style="border: 2px solid black;" onkeyup="run()" placeholder="Write HTML code here...">{{code}}</textarea>
+            </div>
+            <div class="right">
+                <label for="output" >RESULT</label>
+                <iframe id="output" style="border: 2px solid black;" src="about:blank" frameborder="0"></iframe>
+            </div>
+        </div>
+          
+    </div>
+
+    <script>
+        function run() {
+            const htmlCode = document.getElementById("live_code").value;
+            const iframe = document.getElementById("output");
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+          
+            iframeDoc.open();
+            iframeDoc.write(`
+                <html>
+                    <head>
+  <link rel="stylesheet" href="../static/nav_mode.css">
+  <link rel="stylesheet" href="../static/display.css">
+  <link rel="stylesheet" href="../static/background.css">
+    <link rel="stylesheet" href="../static/color.css">
+    <link rel="stylesheet" href="../static/display.css">
+    <link rel="stylesheet" href="../static/mar_pad_rem.css">
+    <link rel="stylesheet" href="../static/grid/grid_row_col_st.css">
+    <link rel="stylesheet" href="../static/new_grid.css">
+    <link rel="stylesheet" href="../static/container.css">
+    <link rel="stylesheet" href="../static/form.css">
+                    </head>
+                    <body>
+                        ${htmlCode}
+                    </body>
+                </html>
+            `);
+            iframeDoc.close();
+        }
+    
+        // Initial run to render the first content (if any)
+        run();
+    </script>
+</body>
+</html>

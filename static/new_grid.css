@@ -1,0 +1,132 @@
+/* Responsive Grid Container */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Grid Columns: Default (XS - <576px) */
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+.grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+
+ /* ========== XS: max-width 575px ========== */
+ @media  (min-width: 00px) and (max-width: 575px) {
+    .xs-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .xs-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .xs-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .xs-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .xs-grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+    .xs-grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+    .xs-grid-cols-7 { grid-template-columns: repeat(7, 1fr); }
+    .xs-grid-cols-8 { grid-template-columns: repeat(8, 1fr); }
+    .xs-grid-cols-9 { grid-template-columns: repeat(9, 1fr); }
+    .xs-grid-cols-10 { grid-template-columns: repeat(10, 1fr); }
+    .xs-grid-cols-11 { grid-template-columns: repeat(11, 1fr); }
+    .xs-grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  }
+  
+  /* ========== SM: max-width 767px ========== */
+  @media (min-width: 575px) and (max-width: 767px){
+    .sm-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .sm-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .sm-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .sm-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .sm-grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+    .sm-grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+    .sm-grid-cols-7 { grid-template-columns: repeat(7, 1fr); }
+    .sm-grid-cols-8 { grid-template-columns: repeat(8, 1fr); }
+    .sm-grid-cols-9 { grid-template-columns: repeat(9, 1fr); }
+    .sm-grid-cols-10 { grid-template-columns: repeat(10, 1fr); }
+    .sm-grid-cols-11 { grid-template-columns: repeat(11, 1fr); }
+    .sm-grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  }
+  
+  /* ========== MD: max-width 991px ========== */
+  @media (min-width: 767px) and(max-width: 991px) {
+    .md-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .md-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .md-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .md-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .md-grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+    .md-grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+    .md-grid-cols-7 { grid-template-columns: repeat(7, 1fr); }
+    .md-grid-cols-8 { grid-template-columns: repeat(8, 1fr); }
+    .md-grid-cols-9 { grid-template-columns: repeat(9, 1fr); }
+    .md-grid-cols-10 { grid-template-columns: repeat(10, 1fr); }
+    .md-grid-cols-11 { grid-template-columns: repeat(11, 1fr); }
+    .md-grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  }
+  
+  /* ========== LG: max-width 1199px ========== */
+  @media (min-width: 991px) and(max-width: 1199px) {
+    .lg-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .lg-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .lg-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .lg-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .lg-grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+    .lg-grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+    .lg-grid-cols-7 { grid-template-columns: repeat(7, 1fr); }
+    .lg-grid-cols-8 { grid-template-columns: repeat(8, 1fr); }
+    .lg-grid-cols-9 { grid-template-columns: repeat(9, 1fr); }
+    .lg-grid-cols-10 { grid-template-columns: repeat(10, 1fr); }
+    .lg-grid-cols-11 { grid-template-columns: repeat(11, 1fr); }
+    .lg-grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  }
+  
+  /* ========== XL: max-width 1399px ========== */
+  @media (min-width: 1199px) and(max-width: 1399px) {
+    .xl-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .xl-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .xl-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .xl-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .xl-grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+    .xl-grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+    .xl-grid-cols-7 { grid-template-columns: repeat(7, 1fr); }
+    .xl-grid-cols-8 { grid-template-columns: repeat(8, 1fr); }
+    .xl-grid-cols-9 { grid-template-columns: repeat(9, 1fr); }
+    .xl-grid-cols-10 { grid-template-columns: repeat(10, 1fr); }
+    .xl-grid-cols-11 { grid-template-columns: repeat(11, 1fr); }
+    .xl-grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  }
+  
+  /* ========== 2XL: max-width 1535px ========== */
+  @media (min-width: 1399px) and(max-width: 1535px) {
+    .xxl-grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .xxl-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .xxl-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .xxl-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .xxl-grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+    .xxl-grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+    .xxl-grid-cols-7 { grid-template-columns: repeat(7, 1fr); }
+    .xxl-grid-cols-8 { grid-template-columns: repeat(8, 1fr); }
+    .xxl-grid-cols-9 { grid-template-columns: repeat(9, 1fr); }
+    .xxl-grid-cols-10 { grid-template-columns: repeat(10, 1fr); }
+    .xxl-grid-cols-11 { grid-template-columns: repeat(11, 1fr); }
+    .xxl-grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  }
+/* Grid Row span */
+.grid-row-span-1 { grid-row: span 1; }
+.grid-row-span-2 { grid-row: span 2; }
+.grid-row-span-3 { grid-row: span 3; }
+.grid-row-span-4 { grid-row: span 4; }
+.grid-row-span-5 { grid-row: span 5; }
+
+/* Text Center Utility */
+.grid-text-center > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Optional: Grid Item Styling */
+.grid-item {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #ccc;
+  font-weight: bold;
+}

@@ -1,0 +1,332 @@
+/* ========== Forms Styles ========== */
+.user-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--bg-content, #f9f9f9);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .input-section label {
+    font-weight: 600;
+    color: var(--text-heading, #333);
+  }
+  
+  .user-input-field {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color, #ccc);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--input-bg, #fff);
+    color: var(--text-color, #000);
+    transition: border-color 0.2s ease;
+  }
+  
+  .user-input-field:focus {
+    outline: none;
+    border-color: var(--primary-color, #007bff);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  .helper-text {
+    font-size: 0.85rem;
+    color: var(--text-muted, #666);
+  }
+  
+  .checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .remember-me-checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-color, #007bff);
+  }
+  
+  .checkbox-label {
+    font-size: 0.95rem;
+    color: var(--text-color, #333);
+  }
+  
+  .submit-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color, #007bff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--primary-dark, #0056b3);
+  }
+  
+  /* ========== Responsive ========== */
+  @media (max-width: 768px) {
+    .user-form-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  
+    .submit-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-form-container {
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .user-input-field {
+      font-size: 0.95rem;
+      padding: 0.65rem 0.9rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.95rem;
+      padding: 0.65rem 1rem;
+    }
+  }
+  
+  /* Add this to your global dark mode file */
+body.dark {
+    --bg-content: #1e1e1e;
+    --border-color: #444;
+    --text-heading: #fff;
+    --text-muted: #aaa;
+    --text-color: #eee;
+    --input-bg: #2c2c2c;
+    --primary-color: #0d6efd;
+    --primary-dark: #084298;
+  }
+  
+  /* Container for the entire form */
+.user-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--form-bg, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Heading style */
+  .user-form-container .form-title,
+  .user-form-container h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark, #222);
+    text-align: center;
+  }
+  
+  /* Each input section wrapper */
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Labels for inputs */
+  .input-section label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-light, #444);
+  }
+  
+  /* Input and textarea fields */
+  .user-input-field {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color, #ccc);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+    background-color: var(--input-bg, #fff);
+  }
+  
+  .user-input-field:focus {
+    outline: none;
+    border-color: var(--primary, #007bff);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  /* Helper text for email */
+  .helper-text {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 0.25rem;
+  }
+  
+  /* Checkbox section */
+  .checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .checkbox-label {
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .remember-me-checkbox {
+    transform: scale(1.2);
+    accent-color: var(--primary, #007bff);
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: var(--primary, #007bff);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--primary-hover, #0056b3);
+  }
+  
+  /* Responsive tweaks */
+  @media screen and (max-width: 600px) {
+    .user-form-container {
+      padding: 1.5rem 1rem;
+      margin: 1rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.95rem;
+      padding: 0.75rem;
+    }
+  
+    .user-form-container .form-title {
+      font-size: 1.5rem;
+    }
+  }
+
+/* Form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0;
+  }
+  
+  /* Form wrapper */
+  .bw-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #e0e0e0; /* Greyish-white background for the form */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Form title */
+  .form-title {
+    text-align: center;
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Input group */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Label styling */
+  .input-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #333;
+    padding: 0.75rem;
+    background-color: #007bff; /* Blue background for labels */
+    color: #fff; /* White text */
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    transition: border-color 0.2s ease;
+    background-color: #fff; /* White background for input fields */
+  }
+  
+  /* Focus effect on input fields */
+  .input-field:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+  }
+  
+  /* Button hover effect */
+  .submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    .bw-form {
+      padding: 1.5rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.95rem;
+      padding: 0.75rem;
+    }
+  }
+  
+  

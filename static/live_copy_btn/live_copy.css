@@ -1,0 +1,24 @@
+
+    .copy-code {
+  all: unset; /* Removes all default button styles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copy-code:hover {
+    color: rgb(58, 141, 153);
+  background-color: transparent/* Optional: hover effect */
+}
+
+
+.link-style {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link-style:hover {
+  color: rgb(58, 141, 153);
+}

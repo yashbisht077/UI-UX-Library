@@ -1,0 +1,84 @@
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  h1, .h1 { font-size: 2.5rem; }
+  h2, .h2 { font-size: 2rem; }
+  h3, .h3 { font-size: 1.75rem; }
+  h4, .h4 { font-size: 1.5rem; }
+  h5, .h5 { font-size: 1.25rem; }
+  h6, .h6 { font-size: 1rem; }
+  
+  /* Display Headings */
+  .display-1 { font-size: 5rem; font-weight: 300; line-height: 1.2; }
+  .display-2 { font-size: 4.5rem; font-weight: 300; }
+  .display-3 { font-size: 4rem; font-weight: 300; }
+  .display-4 { font-size: 3.5rem; font-weight: 300; }
+  .display-5 { font-size: 3rem; font-weight: 300; }
+  .display-6 { font-size: 2.5rem; font-weight: 300; }
+  
+  /* Lead Text */
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  /* Inline Text Elements */
+  .mark { background-color: #fcf8e3; padding: 0.1875em; }
+  .small, small { font-size: 0.875em; }
+  .text-underline, u { text-decoration: underline; }
+  .text-line-through, s, del { text-decoration: line-through; }
+  strong, b { font-weight: bold; }
+  em, i { font-style: italic; }
+  
+  /* Blockquotes */
+  .blockquote {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .blockquote-footer {
+    display: block;
+    font-size: 0.875em;
+    color: #6c757d;
+  }
+  
+  .blockquote-footer::before {
+    content: "— ";
+  }
+  
+  /* Lists */
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .list-inline-item {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  
+  /* Description Lists */
+  dt {
+    font-weight: 700;
+  }
+  
+  dd {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  
+  /* Text Alignment Utilities */
+  .text-start { text-align: left; }
+  .text-center { text-align: center; }
+  .text-end { text-align: right; }
+  

@@ -1,0 +1,346 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container w-100p">
+    <div class="container">
+        <h1 class="py-1">Flexbox Layout with Alignment Examples</h1>
+        <p>Flexbox is a one-dimensional layout model that allows you to arrange items in a row or column using various
+            alignment properties.</p>
+        <p>Below are different flexbox combinations using utility classes.</p>
+    </div>
+
+    <div class="container">
+        <h2>Example 1: Row Direction + Justify Center + Align Start</h2>
+        <h3>About It</h3>
+        <p>Items are laid out in a row, horizontally centered, and aligned at the start vertically (top of the
+            container).</p>
+
+        <div class="container bg-prussian-blue w-90p " style="border: 5px solid #003049;">
+            <div class=" display-flex flex-row justify-center align-start    m-0 p-0   h-25">
+                <div class="bg-b5fccd w-8 h-8"></div>
+                <div class="bg-7AC6D2 w-8 h-8"></div>
+                <div class="bg-3D90D7 w-8 h-8"></div>
+                <div class="bg-3674B5 w-8 h-8"></div>
+                <div class="bg-3A59D1 w-8 h-8"></div>
+
+            </div>
+        </div>
+
+        <div class="container mt-2">
+            <div class="display-flex justify-space-between mb-0.5">
+                <h4>HTML</h4>
+                <div>
+                    <form action="{{ url_for('live') }}" method="post">
+                        <input type="hidden" name="code" value="
+    <div class='container bg-prussian-blue w-90p '' style='border: 5px solid #003049;''> 
+        <div class=' display-flex flex-row justify-center align-start    m-0 p-0   h-25'>
+            <div class='bg-b5fccd w-8 h-8'></div>
+            <div class='bg-7AC6D2 w-8 h-8'></div>
+            <div class='bg-3D90D7 w-8 h-8'></div>
+            <div class='bg-3674B5 w-8 h-8' ></div>
+            <div class='bg-3A59D1 w-8 h-8'></div>
+            
+        </div>
+    </div>
+    
+                            ">
+
+
+                        <div class="display-flex justify-space-evenly  ">
+                            <button type="submit" class="copy-code">
+                                <h4 class="mr-2">Live</h4>
+                            </button>
+
+                            <a class="copy-code ">
+                                <h4 class="mr-2 ">Copy</h4>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <pre><code>
+&lt;div class="container bg-prussian-blue w-90p" style="border: 5px solid #003049;"&gt;
+    &lt;div class="display-flex flex-row justify-center align-start m-0 p-0 h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+            <hr>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <h2>Example 2: Row Direction + Centered Both Horizontally and Vertically</h2>
+        <h3>About It</h3>
+        <p>This layout centers all items in both directions using <code>justify-center</code> and
+            <code>align-center</code>.</p>
+
+        <div class="container bg-prussian-blue  w-90p " style="border: 5px solid #003049;">
+            <div class="display-flex flex-row justify-center align-center    m-0 p-0  h-25">
+                <div class="bg-b5fccd w-8 h-8"></div>
+                <div class="bg-7AC6D2 w-8 h-8"></div>
+                <div class="bg-3D90D7 w-8 h-8"></div>
+                <div class="bg-3674B5 w-8 h-8"></div>
+                <div class="bg-3A59D1 w-8 h-8"></div>
+
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="display-flex justify-space-between mb-0.5">
+                <h4>HTML</h4>
+                <div>
+                    <form action="{{ url_for('live') }}" method="post">
+                        <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue w-90p '' style='border: 5px solid #003049;''>    
+    <div class=' display-flex flex-row justify-center align-center    m-0 p-0  h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8' ></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>        
+</div>
+
+                        ">
+
+
+                        <div class="display-flex justify-space-evenly  ">
+                            <button type="submit" class="copy-code">
+                                <h4 class="mr-2">Live</h4>
+                            </button>
+
+                            <a class="copy-code ">
+                                <h4 class="mr-2 ">Copy</h4>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <pre><code>
+&lt;div class="container bg-prussian-blue w-90p" style="border: 5px solid #003049;"&gt;
+    &lt;div class="display-flex flex-row justify-center align-center m-0 p-0 h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+            <hr>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>Example 3: Row Direction + Justify Center + Align End</h2>
+        <h3>About It</h3>
+        <p>Items are horizontally centered and vertically aligned to the bottom using <code>align-end</code>.</p>
+
+        <div class="container bg-prussian-blue  w-90p " style="border: 5px solid #003049;">
+            <div class=" display-flex flex-row justify-center align-end m-0 p-0  h-25">
+                <div class="bg-b5fccd w-8 h-8"></div>
+                <div class="bg-7AC6D2 w-8 h-8"></div>
+                <div class="bg-3D90D7 w-8 h-8"></div>
+                <div class="bg-3674B5 w-8 h-8"></div>
+                <div class="bg-3A59D1 w-8 h-8"></div>
+
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="display-flex justify-space-between mb-0.5">
+                <h4>HTML</h4>
+                <div>
+                    <form action="{{ url_for('live') }}" method="post">
+                        <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue w-90p '' style='border: 5px solid #003049;''> 
+    <div class=' display-flex flex-row justify-center align-end m-0 p-0  h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8' ></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>      
+</div>
+
+                        ">
+
+
+                        <div class="display-flex justify-space-evenly  ">
+                            <button type="submit" class="copy-code">
+                                <h4 class="mr-2">Live</h4>
+                            </button>
+
+                            <a class="copy-code ">
+                                <h4 class="mr-2 ">Copy</h4>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <pre><code>
+&lt;div class="container bg-prussian-blue w-90p" style="border: 5px solid #003049;"&gt;
+    &lt;div class="display-flex flex-row justify-center align-end m-0 p-0 h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+            <hr>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Example 4: Column Direction + Justify Center + Align End</h2>
+        <h3>About It</h3>
+        <p>Items are laid out in a column, horizontally aligned to the right, and vertically centered using
+            <code>flex-col</code> + <code>justify-center</code> + <code>align-end</code>.</p>
+
+        <div class="container bg-prussian-blue  w-90p" style="border: 5px solid #003049;">
+            <div class="display-flex flex-col justify-center align-end m-0 p-0  h-25">
+                <div class="bg-b5fccd w-8 h-8"></div>
+                <div class="bg-7AC6D2 w-8 h-8"></div>
+                <div class="bg-3D90D7 w-8 h-8"></div>
+                <div class="bg-3674B5 w-8 h-8"></div>
+                <div class="bg-3A59D1 w-8 h-8"></div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="display-flex justify-space-between mb-0.5">
+                <h4>HTML</h4>
+                <div>
+                    <form action="{{ url_for('live') }}" method="post">
+                        <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue w-90p '' style='border: 5px solid #003049;''> 
+    <div class=' display-flex flex-col justify-center align-end m-0 p-0  h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8' ></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>   
+</div>
+
+                        ">
+
+
+                        <div class="display-flex justify-space-evenly  ">
+                            <button type="submit" class="copy-code">
+                                <h4 class="mr-2">Live</h4>
+                            </button>
+
+                            <a class="copy-code ">
+                                <h4 class="mr-2 ">Copy</h4>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <pre><code>
+&lt;div class="container bg-prussian-blue w-90p" style="border: 5px solid #003049;"&gt;
+    &lt;div class="display-flex flex-col justify-center align-end m-0 p-0 h-25"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Example 5: Column Direction + Justify Space-Evenly + Flex Wrap Reverse</h2>
+        <h3>About It</h3>
+        <p>This layout uses column direction, evenly spaced vertical items, and reverses wrap direction using
+            <code>flex-col</code> + <code>justify-space-evenly</code> + <code>flex-wrap-reverse</code>.</p>
+
+        <div class="container bg-prussian-blue w-90p" style="border: 5px solid #003049;">
+            <div class="display-flex flex-col justify-space-evenly align-center  flex-wrap-reverse m-0 p-0  h-8">
+                <div class="bg-b5fccd w-8 h-8"></div>
+                <div class="bg-7AC6D2 w-8 h-8"></div>
+                <div class="bg-3D90D7 w-8 h-8"></div>
+                <div class="bg-3674B5 w-8 h-8"></div>
+                <div class="bg-3A59D1 w-8 h-8"></div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="display-flex flex-col justify-space-evenly align-center  flex-wrap-reverse  mb-0.5">
+                <h4>HTML</h4>
+                <div>
+                    <form action="{{ url_for('live') }}" method="post">
+                        <input type="hidden" name="code" value="
+<div class='container bg-prussian-blue w-90p '' style='border: 5px solid #003049;''> 
+    <div class=' display-flex flex-col justify-center align-end m-0 p-0  h-25'>
+        <div class='bg-b5fccd w-8 h-8'></div>
+        <div class='bg-7AC6D2 w-8 h-8'></div>
+        <div class='bg-3D90D7 w-8 h-8'></div>
+        <div class='bg-3674B5 w-8 h-8' ></div>
+        <div class='bg-3A59D1 w-8 h-8'></div>
+    </div>        
+</div>
+
+                        ">
+
+
+                        <div class="display-flex justify-space-evenly  ">
+                            <button type="submit" class="copy-code">
+                                <h4 class="mr-2">Live</h4>
+                            </button>
+
+                            <a class="copy-code ">
+                                <h4 class="mr-2 ">Copy</h4>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <pre><code>
+&lt;div class="container bg-prussian-blue w-90p" style="border: 5px solid #003049;"&gt;
+    &lt;div class="display-flex flex-col justify-space-evenly align-center flex-wrap-reverse m-0 p-0 h-8"&gt;
+        &lt;div class="bg-b5fccd w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-7AC6D2 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3D90D7 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3674B5 w-8 h-8"&gt;&lt;/div&gt;
+        &lt;div class="bg-3A59D1 w-8 h-8"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+            <hr>
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock content %}

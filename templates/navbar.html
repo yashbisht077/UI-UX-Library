@@ -1,0 +1,295 @@
+{%extends "layout.html"%}
+{%block content%}   
+<hr>
+
+
+<div class="container mt-2">
+    <h1>NAVBAR</h1>
+    <p>Navbar is a navigation bar that is used to navigate between different pages of a website.</p>
+    
+    <div class="container">
+        <h2>Modern Minimalist Navbar</h2>
+        <p>A clean and simple navigation bar with just the brand name and links. Ideal for minimal and distraction-free designs.</p>
+        <div >
+            <nav class="navbar modern-minimalist" style="border-radius: 15px;">
+                <div class="navbar-brand">MyBrand</div>
+                <button class="hamburger-toggle" onclick="toggleLinks('modernLinks')">☰</button>
+                <ul class="navbar-links " id="modernLinks">
+                  <li><a class="" href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container mt-2">
+            <div class="display-flex justify-space-between mb-0.5">
+                <h4>HTML</h4>
+            </div>
+            <hr>
+
+            <div>
+                <pre>
+                    <code>
+&lt;nav class="navbar modern-minimalist" ">
+  &lt;div class="navbar-brand"&gt;MyBrand&lt;/div&gt;
+  &lt;ul class="navbar-links"&gt;
+  &lt;li>&lt;a href="#">Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li>&lt;a href="#">About&lt;/a&gt;&lt;/li&gt;
+  &lt;li>&lt;a href="#">Services&lt;/a&gt;&lt;/li&gt;
+  &lt;li>&lt;a href="#">Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul>
+                      </nav>
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Dark Mode Navbar</h2>
+        <p>A sleek dark-themed navbar that provides a modern look and feel for your website. Perfect for users who prefer darker color schemes.</p>
+        <div>
+            <nav class="navbar dark-mode" style="border-radius: 15px;">
+                <div class="navbar-brand">MyBrand</div>
+                <button class="hamburger-toggle" onclick="toggleLinks('darkModeLinks')">☰</button>
+                <ul class="navbar-links" id="darkModeLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container mt-2">
+            <div class="display-flex justify-space-between mb-0.5">
+                <h4>HTML</h4>
+                <h4>Copy</h4>
+            </div>
+            <hr>
+    
+            <div>
+                <pre>
+                    <code>
+&lt;nav class="navbar dark-mode" "&gt;
+  &lt;div class="navbar-brand"&gt;MyBrand&lt;/div&gt;
+  &lt;ul class="navbar-links"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <h2>Grey Mode Navbar</h2>
+        <p>A versatile, grey-themed navbar with a search bar included, offering a subtle neutral look.</p>
+        <div>
+          <nav class="navbar grey-mode" style="border-radius: 15px;">
+            <div class="navbar-brand">MyBrand</div>
+            <button class="hamburger-toggle" onclick="toggleLinks('greyLinks')">☰</button>
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+              <button type="submit">Search</button>
+            </div>
+            <ul class="navbar-links" id="greyLinks">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container mt-2">
+          <div class="display-flex justify-space-between mb-0.5">
+            <h4>HTML</h4>
+            <h4>Copy</h4>
+          </div>
+          <hr>
+          <div>
+            <pre>
+              <code>
+&lt;nav class="navbar grey-mode"&gt;
+  &lt;div class="navbar-brand"&gt;MyBrand&lt;/div&gt;
+  &lt;button class="hamburger-toggle" onclick="toggleLinks('greyLinks')"&gt;☰&lt;/button&gt;
+  &lt;div class="search-bar"&gt;
+  &lt;input type="text" placeholder="Search..." /&gt;
+  &lt;button type="submit"&gt;Search&lt;/button&gt;
+&lt;/div&gt;
+&lt;ul class="navbar-links" id="greyLinks"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <h2>Toggleable Theme Navbar</h2>
+        <p>A navbar with a theme toggle button that allows users to switch between light and dark modes.</p>
+        <div>
+          <nav class="navbar toggle-navbar light-mode" id="toggle-navbar" style="border-radius: 15px;">
+            <div class="navbar-brand">MyBrand</div>
+            <button class="hamburger-toggle" onclick="toggleLinks('toggleThemeLinks')">☰</button>
+            <ul class="mode  navbar-links" id="toggleThemeLinks">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <!-- <li  "> -->
+                <button id="navbar-theme-toggle-btn" class="light-mode toggle-btn">Dark Mode</button>
+            </ul>
+          </nav>
+        </div>
+        <div class="container mt-2">
+          <div class="display-flex justify-space-between mb-0.5">
+            <h4>HTML</h4>
+            <h4>Copy</h4>
+          </div>
+          <hr>
+          <div>
+            <pre>
+              <code>
+&lt;nav class="navbar toggle-navbar light-mode" id="toggle-navbar"&gt;
+  &lt;div class="navbar-brand"&gt;MyBrand&lt;/div&gt;
+  &lt;button class="hamburger-toggle" onclick="toggleLinks('toggleThemeLinks')"&gt;☰&lt;/button&gt;
+  &lt;ul class="navbar-links" id="toggleThemeLinks"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;li class="theme-toggle"&gt;
+  n id="navbar-theme-toggle-btn" class="toggle-btn"&gt;Dark Mode&lt;/button&gt;
+&lt;/li&gt;
+  lt;/ul&gt;
+&lt;/nav&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <h2>Dropdown Navbar</h2>
+        <p>A dark-themed navbar with a dropdown menu for additional navigation options.</p>
+        <div>
+          <nav class="navbar dark-mode" style="border-radius: 15px;">
+            <div class="navbar-brand">MyBrand</div>
+            <button class="hamburger-toggle" onclick="toggleLinks('dropdownLinks')">☰</button>
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+              <button>Search</button>
+            </div>
+            <ul class="navbar-links" id="dropdownLinks">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown navbar-links">
+                <a href="#" class="dropdown-toggle">More</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Submenu 1</a></li>
+                  <li><a href="#">Submenu 2</a></li>
+                  <li><a href="#">Submenu 3</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container mt-2">
+          <div class="display-flex justify-space-between mb-0.5">
+            <h4>HTML</h4>
+            <h4>Copy</h4>
+          </div>
+          <hr>
+          <div>
+            <pre>
+              <code>
+                &lt;nav class="navbar dark-mode"&gt;
+&lt;div class="navbar-brand"&gt;MyBrand&lt;/div&gt;
+    &lt;button class="hamburger-toggle" onclick="toggleLinks('dropdownLinks')"&gt;☰&lt;/button&gt;
+    &lt;div class="search-bar"&gt;
+        &lt;input type="text" placeholder="Search..." /&gt;
+        &lt;button&gt;Search&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;ul class="navbar-links" id="dropdownLinks"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="dropdown navbar-links"&gt;
+            &lt;a href="#" class="dropdown-toggle"&gt;More&lt;/a&gt;
+            &lt;ul class="dropdown-menu"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Submenu 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Submenu 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Submenu 3&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Careers&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Community&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      
+
+
+</div>
+
+<script>
+    // Dropdown handling
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        const menu = this.nextElementSibling;
+        menu.classList.toggle('show');
+      });
+    });
+  
+    // Toggle links function for reusable toggling
+    function toggleLinks(id) {
+      const links = document.getElementById(id);
+      if (links) links.classList.toggle('show');
+    }
+  
+    // Last navbar toggle (unique)
+    document.getElementById("navbar-toggle")?.addEventListener("click", function () {
+      document.getElementById("navbar-links").classList.toggle("show");
+    });
+  
+    // Theme toggle
+    const themeToggleButton = document.getElementById("navbar-theme-toggle-btn");
+    const navbar = document.getElementById("toggle-navbar");
+  
+    themeToggleButton?.addEventListener("click", () => {
+      navbar.classList.toggle("light-mode");
+      navbar.classList.toggle("dark-mode");
+  
+      themeToggleButton.textContent =
+        navbar.classList.contains("dark-mode")
+          ? "Light Mode"
+          : "Dark Mode";
+    });
+  </script>
+{%endblock content%}
+
+

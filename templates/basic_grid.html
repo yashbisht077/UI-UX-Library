@@ -1,0 +1,351 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+    <div class="container">
+        <h1>Grid</h1>
+        <hr class="mt-1">
+    <p>
+        The Grid Layout Module offers a grid-based layout system, with rows and columns.
+        The Grid Layout Module allows developers to easily create complex web layouts.
+        The Grid Layout Module makes it easier to design a responsive layout structure, without using float or positioning.
+        The CSS grid properties are supported in all modern browsers.</p>
+        <div class="container">
+        <div class="mt-3 mb-3 ml-3 mr-3   ">
+            <h3>Basic Grid</h3>
+            <hr>
+            <p >12 grid items in a 3-column layout</p>
+            <p>Responsive grid layout with 3 columns on larger screens and 1-2 columns on smaller screens</p>
+            <div class="container bg-midnightblue">
+                <div
+                    class="display-grid grid-cols-3 grid-rows-2 xs-grid-cols-1 sm-grid-cols-2  gap-2 grid-text-center  ">
+                    <div class="grid-item ">01</div>
+                    <div class="grid-item">02</div>
+                    <div class="grid-item">03</div>
+                    <div class="grid-item">04</div>
+                    <div class="grid-item">05</div>
+                    <div class="grid-item">06</div>
+                    <div class="grid-item">07</div>
+                    <div class="grid-item">08</div>
+                    <div class="grid-item">09</div>
+                    <div class="grid-item">10</div>
+                    <div class="grid-item">11</div>
+                    <div class="grid-item">12</div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="display-flex justify-space-between mb-0.5">
+                    <h4>HTML</h4>
+                    <div>
+                        <form action="{{ url_for('live') }}" method="post">
+                            <input type="hidden" name="code" value="
+<div class='container bg-midnightblue'>
+    <div class='display-grid grid-cols-3 grid-rows-2 xs-grid-cols-1 sm-grid-cols-2 gap-2 grid-text-center'>
+        <div class='grid-item'>01</div>
+        <div class='grid-item'>02</div>
+        <div class='grid-item'>03</div>
+        <div class='grid-item'>04</div>
+        <div class='grid-item'>05</div>
+        <div class='grid-item'>06</div>
+        <div class='grid-item'>07</div>
+        <div class='grid-item'>08</div>
+        <div class='grid-item'>09</div>
+        <div class='grid-item'>10</div>
+        <div class='grid-item'>11</div>
+        <div class='grid-item'>12</div>
+    </div>
+</div>
+
+                            ">
+    
+    
+                            <div class="display-flex justify-space-evenly  ">
+                                <button type="submit" class="copy-code">
+                                    <h4 class="mr-2">Live</h4>
+                                </button>
+    
+                                <a class="copy-code ">
+                                    <h4 class="mr-2 ">Copy</h4>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <pre>
+            <code>
+&ltdiv class="container bg-midnightblue"&gt
+    &ltdiv
+        class="display-grid grid-cols-3 grid-rows-2 xs-grid-cols-1 sm-grid-cols-2  gap-2 grid-text-center"&gt
+        &ltdiv class="grid-item"&gt01&lt/div&gt
+        &ltdiv class="grid-item"&gt02&lt/div&gt
+        &ltdiv class="grid-item"&gt03&lt/div&gt
+        &ltdiv class="grid-item"&gt04&lt/div&gt
+        &ltdiv class="grid-item"&gt05&lt/div&gt
+        &ltdiv class="grid-item"&gt06&lt/div&gt
+        &ltdiv class="grid-item"&gt07&lt/div&gt
+        &ltdiv class="grid-item"&gt08&lt/div&gt
+        &ltdiv class="grid-item"&gt09&lt/div&gt
+        &ltdiv class="grid-item"&gt10&lt/div&gt
+        &ltdiv class="grid-item"&gt11&lt/div&gt
+        &ltdiv class="grid-item"&gt12&lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+
+            </code>
+            </pre>
+            </div>
+        </div>
+
+        <div class="mt-3 mb-3 ml-3 mr-3  ">
+            <h3>Row Span</h3>
+            <p>First grid item spans 2 rows</p>
+
+
+            <div class="container bg-midnightblue">
+                <div class="display-grid grid-cols-3 gap-2  xs-grid-cols-1 sm-grid-cols-2  grid-text-center">
+                    <div class="grid-item grid-row-2 ">01</div>
+                    <div class="grid-item">02</div>
+                    <div class="grid-item">03</div>
+                    <div class="grid-item">04</div>
+                    <div class="grid-item">05</div>
+                    <div class="grid-item">06</div>
+                    <div class="grid-item">07</div>
+                    <div class="grid-item">08</div>
+                    <div class="grid-item">09</div>
+                    <div class="grid-item">10</div>
+                    <div class="grid-item">11</div>
+                    <div class="grid-item">12</div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="display-flex justify-space-between mb-0.5">
+                    <h4>HTML</h4>
+                    <div>
+                        <form action="{{ url_for('live') }}" method="post">
+                            <input type="hidden" name="code" value="
+                            <div class='container bg-midnightblue'>
+    <div class='display-grid grid-cols-3 gap-2 xs-grid-cols-1 sm-grid-cols-2 grid-text-center'>
+        <div class='grid-item grid-row-2'>01</div>
+        <div class='grid-item'>02</div>
+        <div class='grid-item'>03</div>
+        <div class='grid-item'>04</div>
+        <div class='grid-item'>05</div>
+        <div class='grid-item'>06</div>
+        <div class='grid-item'>07</div>
+        <div class='grid-item'>08</div>
+        <div class='grid-item'>09</div>
+        <div class='grid-item'>10</div>
+        <div class='grid-item'>11</div>
+        <div class='grid-item'>12</div>
+    </div>
+</div>
+
+                            ">
+    
+    
+                            <div class="display-flex justify-space-evenly  ">
+                                <button type="submit" class="copy-code">
+                                    <h4 class="mr-2">Live</h4>
+                                </button>
+    
+                                <a class="copy-code ">
+                                    <h4 class="mr-2 ">Copy</h4>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <pre>
+                 <code>
+&ltdiv class="container bg-midnightblue"&gt
+    &ltdiv class="display-grid grid-cols-3 gap-2  xs-grid-cols-1 sm-grid-cols-2  grid-text-center"&gt
+            &ltdiv class="grid-item grid-row-2"&gt01&lt/div&gt
+            &ltdiv class="grid-item"&gt02&lt/div&gt
+            &ltdiv class="grid-item"&gt03&lt/div&gt
+            &ltdiv class="grid-item"&gt04&lt/div&gt
+            &ltdiv class="grid-item"&gt05&lt/div&gt
+            &ltdiv class="grid-item"&gt06&lt/div&gt
+            &ltdiv class="grid-item"&gt07&lt/div&gt
+            &ltdiv class="grid-item"&gt08&lt/div&gt
+            &ltdiv class="grid-item"&gt09&lt/div&gt
+            &ltdiv class="grid-item"&gt10&lt/div&gt
+            &ltdiv class="grid-item"&gt11&lt/div&gt
+            &ltdiv class="grid-item"&gt12&lt/div&gt
+    &lt/div&gt
+&lt/div&gt                
+                 </code>
+                 </pre>
+            </div>
+        </div>
+
+        <div class="mt-3 mb-3 ml-3 mr-3   ">
+            <h3>Column Span</h3>
+            <p>Items span multiple columns using start and end</p>
+            <div class="container bg-midnightblue">
+                <div class="display-grid grid-cols-3 gap-2  xs-grid-cols-1 sm-grid-cols-2  grid-text-center">
+                    <div class="grid-item grid-col-start-2 grid-col-end-4 ">01</div>
+                    <div class="grid-item">02</div>
+                    <div class="grid-item">03</div>
+                    <div class="grid-item">04</div>
+                    <div class="grid-item">05</div>
+                    <div class="grid-item">06</div>
+                    <div class="grid-item grid-col-start-1 grid-col-end-3">07</div>
+                    <div class="grid-item">08</div>
+                    <div class="grid-item">09</div>
+                    <div class="grid-item">10</div>
+                    <div class="grid-item">11</div>
+                    <div class="grid-item">12</div>
+                </div>
+            </div>
+
+            <div class="container mt-2">
+                <div class="display-flex justify-space-between mb-0.5">
+                    <h4>HTML</h4>
+                    <div>
+                        <form action="{{ url_for('live') }}" method="post">
+                            <input type="hidden" name="code" value="
+<div class='container bg-midnightblue'>
+    <div class='display-grid grid-cols-3 gap-2 xs-grid-cols-1 sm-grid-cols-2 grid-text-center'>
+        <div class='grid-item grid-col-start-2 grid-col-end-4'>01</div>
+        <div class='grid-item'>02</div>
+        <div class='grid-item'>03</div>
+        <div class='grid-item'>04</div>
+        <div class='grid-item'>05</div>
+        <div class='grid-item'>06</div>
+        <div class='grid-item grid-col-start-1 grid-col-end-3'>07</div>
+        <div class='grid-item'>08</div>
+        <div class='grid-item'>09</div>
+        <div class='grid-item'>10</div>
+        <div class='grid-item'>11</div>
+        <div class='grid-item'>12</div>
+    </div>
+</div>
+
+
+                            ">
+    
+    
+                            <div class="display-flex justify-space-evenly  ">
+                                <button type="submit" class="copy-code">
+                                    <h4 class="mr-2">Live</h4>
+                                </button>
+    
+                                <a class="copy-code ">
+                                    <h4 class="mr-2 ">Copy</h4>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <pre>
+                 <code>
+&ltdiv class="container bg-midnightblue"&gt
+    &ltdiv class="display-grid grid-cols-3 gap-2  xs-grid-cols-1 sm-grid-cols-2  grid-text-center"&gt
+        &ltdiv class="grid-item grid-col-start-2 grid-col-end-4"&gt01&lt/div&gt
+        &ltdiv class="grid-item"&gt02&lt/div&gt
+        &ltdiv class="grid-item"&gt03&lt/div&gt
+        &ltdiv class="grid-item"&gt04&lt/div&gt
+        &ltdiv class="grid-item"&gt05&lt/div&gt
+        &ltdiv class="grid-item"&gt06&lt/div&gt
+        &ltdiv class="grid-item grid-col-start-1 grid-col-end-3"&gt07&lt/div&gt
+        &ltdiv class="grid-item"&gt08&lt/div&gt
+        &ltdiv class="grid-item"&gt09&lt/div&gt
+        &ltdiv class="grid-item"&gt10&lt/div&gt
+        &ltdiv class="grid-item"&gt11&lt/div&gt
+        &ltdiv class="grid-item"&gt12&lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+                 </code>
+                 </pre>
+            </div>
+        </div>
+
+
+        <div class="mt-3 mb-3 ml-3 mr-3  ">
+            <h3>Mixed Row & Column Span</h3>
+            <p>Items with both row and column spans</p>
+            <div class="container bg-midnightblue">
+                <div class="grid grid-cols-3 gap-2  xs-grid-cols-1 sm-grid-cols-2  grid-text-center">
+                    <div class="grid-item grid-row-start-1 grid-row-end-3 ">01</div>
+                    <div class="grid-item">02</div>
+                    <div class="grid-item">03</div>
+                    <div class="grid-item">04</div>
+                    <div class="grid-item">05</div>
+                    <div class="grid-item grid-col-start-2 grid-col-end-3 ">06</div>
+                    <div class="grid-item ">07</div>
+                    <div class="grid-item">08</div>
+                    <div class="grid-item">09</div>
+                    <div class="grid-item">10</div>
+                    <div class="grid-item">11</div>
+                    <div class="grid-item">12</div>
+                </div>
+            </div>
+
+            <div class="container mt-2">
+                <div class="display-flex justify-space-between mb-0.5">
+                    <h4>HTML</h4>
+                    <div>
+                        <form action="{{ url_for('live') }}" method="post">
+                            <input type="hidden" name="code" value="
+<div class='container bg-midnightblue'>
+                <div class='grid grid-cols-3 gap-2  xs-grid-cols-1 sm-grid-cols-2  grid-text-center'>
+                    <div class='grid-item grid-row-start-1 grid-row-end-3 '>01</div>
+                    <div class='grid-item'>02</div>
+                    <div class='grid-item'>03</div>
+                    <div class='grid-item'>04</div>
+                    <div class='grid-item'>05</div>
+                    <div class='grid-item grid-col-start-2 grid-col-end-3 '>06</div>
+                    <div class='grid-item '>07</div>
+                    <div class='grid-item'>08</div>
+                    <div class='grid-item'>09</div>
+                    <div class='grid-item'>10</div>
+                    <div class='grid-item'>11</div>
+                    <div class='grid-item'>12</div>
+                </div>
+            </div>
+
+                            ">
+    
+    
+                            <div class="display-flex justify-space-evenly  ">
+                                <button type="submit" class="copy-code">
+                                    <h4 class="mr-2">Live</h4>
+                                </button>
+    
+                                <a class="copy-code ">
+                                    <h4 class="mr-2 ">Copy</h4>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <pre>
+                 <code>
+&ltdiv class="container bg-midnightblue"&gt
+    &ltdiv class="grid grid-cols-3 gap-2  xs-grid-cols-1 sm-grid-cols-2  grid-text-center"&gt
+        &ltdiv class="grid-item grid-row-start-1 grid-row-end-3"&gt01&lt/div&gt
+        &ltdiv class="grid-item"&gt02&lt/div&gt
+        &ltdiv class="grid-item"&gt03&lt/div&gt
+        &ltdiv class="grid-item"&gt04&lt/div&gt
+        &ltdiv class="grid-item"&gt05&lt/div&gt
+        &ltdiv class="grid-item grid-col-start-2 grid-col-end-3"&gt06&lt/div&gt
+        &ltdiv class="grid-item"&gt07&lt/div&gt
+        &ltdiv class="grid-item"&gt08&lt/div&gt
+        &ltdiv class="grid-item"&gt09&lt/div&gt
+        &ltdiv class="grid-item"&gt10&lt/div&gt
+        &ltdiv class="grid-item"&gt11&lt/div&gt
+        &ltdiv class="grid-item"&gt12&lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+                 </code>
+                 </pre>
+            </div>
+            <div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,235 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  <h2 class="mb-2"> Forms</h2>
+  <hr>
+  <p> Forms are a way to collect user input and submit it to a server for processing.</p>
+  <p> They are essential for user interaction and data collection in web applications.</p>
+  <div class="container">
+    <h3>Stay Connected</h3>
+    <p>Log in to keep up with the latest features and personalized content.</p>
+    <form class="user-form-container">
+      <div class="input-section">
+        <label for="emailField">Email address</label>
+        <input type="email" class="user-input-field" id="emailField" aria-describedby="emailInfo"
+          placeholder="Enter email">
+        <div class="email-helper-text">
+          <small id="emailInfo" class="helper-text">We will never share your email with anyone else.</small>
+        </div>
+      </div>
+      <div class="input-section">
+        <label for="passwordField">Password</label>
+        <input type="password" class="user-input-field" id="passwordField" placeholder="Enter your password">
+      </div>
+      <div class="checkbox-section">
+        <input type="checkbox" class="remember-me-checkbox" id="rememberMe">
+        <label class="checkbox-label" for="rememberMe">Remember me</label>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <div class="container mt-2">
+      <div class="display-flex justify-space-between mb-0.5">
+          <h4>HTML</h4>
+      </div>
+      <hr>
+
+      <div>
+          <pre>
+              <code>
+&lt;form class="user-form-container"&gt;
+    &lt;div class="input-section"&gt;
+        &lt;label for="emailField"&gt;Email address&lt;/label&gt;
+        &lt;input type="email" class="user-input-field" id="emailField" aria-describedby="emailInfo" placeholder="Enter email"&gt;
+        &lt;div class="email-helper-text"&gt;
+            &lt;small id="emailInfo" class="helper-text"&gt;We will never share your email with anyone else.&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="input-section"&gt;
+        &lt;label for="passwordField"&gt;Password&lt;/label&gt;
+        &lt;input type="password" class="user-input-field" id="passwordField" placeholder="Enter your password"&gt;
+    &lt;/div&gt;
+    &lt;div class="checkbox-section"&gt;
+        &lt;input type="checkbox" class="remember-me-checkbox" id="rememberMe"&gt;
+        &lt;label class="checkbox-label" for="rememberMe"&gt;Remember me&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="submit-btn"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+
+                </nav>
+              </code>
+          </pre>
+      </div>
+  </div>
+  </div>
+  <div class="container">
+    <h3>Let’s Talk!</h3>
+    <p>Use the form below to start a conversation — we’d love to hear from you.</p>
+
+    <div class="form-container">
+      <form class="bw-form">
+        <h2 class="form-title">Contact Us</h2>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" class="input-field" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="input-field" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="input-field" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea class="input-field" id="message" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <div class="container mt-2">
+      <div class="display-flex justify-space-between mb-0.5">
+          <h4>HTML</h4>
+      </div>
+      <hr>
+
+      <div>
+          <pre>
+              <code>
+&lt;form class="bw-form"&gt;
+  &lt;h2 class="form-title"&gt;Contact Us&lt;/h2&gt;
+  &lt;div class="input-group"&gt;
+      &lt;label for="name"&gt;Name&lt;/label&gt;
+      &lt;input type="text" class="input-field" id="name" placeholder="Enter your name" required&gt;
+  &lt;/div&gt;
+  &lt;div class="input-group"&gt;
+      &lt;label for="email"&gt;Email Address&lt;/label&gt;
+      &lt;input type="email" class="input-field" id="email" placeholder="Enter your email" required&gt;
+  &lt;/div&gt;
+  &lt;div class="input-group"&gt;
+      &lt;label for="phone"&gt;Phone Number&lt;/label&gt;
+      &lt;input type="tel" class="input-field" id="phone" placeholder="Enter your phone number" required&gt;
+  &lt;/div&gt;
+  &lt;div class="input-group"&gt;
+      &lt;label for="message"&gt;Message&lt;/label&gt;
+      &lt;textarea class="input-field" id="message" placeholder="Enter your message" required&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="submit-btn"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+
+                </nav>
+              </code>
+          </pre>
+      </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <h3>Your Voice Matters</h3>
+    <p>Tell us what you think — your feedback helps us shape a better experience.</p>
+    <form class="user-form-container">
+      <h2 class="form-title">We value your feedback</h2>
+
+      <div class="input-section">
+        <label for="nameField">Your Name</label>
+        <input type="text" class="user-input-field" id="nameField" placeholder="Enter your full name" />
+      </div>
+
+      <div class="input-section">
+        <label for="emailField">Email Address</label>
+        <input type="email" class="user-input-field" id="emailField" aria-describedby="emailHelp"
+          placeholder="Enter your email" />
+        <div class="email-helper-text">
+          <small id="emailHelp" class="helper-text">We’ll only use this if you want a follow-up.</small>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <label for="feedbackMessage">Your Feedback</label>
+        <textarea class="user-input-field" id="feedbackMessage" rows="5"
+          placeholder="Write your thoughts, suggestions, or concerns here..."></textarea>
+      </div>
+
+      <div class="input-section">
+        <label for="rating">Rate Us</label>
+        <select id="rating" class="user-input-field">
+          <option value="">Select a rating</option>
+          <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+          <option value="4">⭐⭐⭐⭐ - Good</option>
+          <option value="3">⭐⭐⭐ - Average</option>
+          <option value="2">⭐⭐ - Poor</option>
+          <option value="1">⭐ - Terrible</option>
+        </select>
+      </div>
+
+      <div class="checkbox-section">
+        <input type="checkbox" class="remember-me-checkbox" id="followUpConsent" />
+        <label class="checkbox-label" for="followUpConsent">I’m okay with being contacted for follow-up</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Feedback</button>
+    </form>
+    <div class="container mt-2">
+      <div class="display-flex justify-space-between mb-0.5">
+          <h4>HTML</h4>
+      </div>
+      <hr>
+
+      <div>
+          <pre>
+              <code>
+&lt;form class="user-form-container"&gt;
+    &lt;h2 class="form-title"&gt;We value your feedback&lt;/h2&gt;
+
+    &lt;div class="input-section"&gt;
+        &lt;label for="nameField"&gt;Your Name&lt;/label&gt;
+        &lt;input type="text" class="user-input-field" id="nameField" placeholder="Enter your full name" /&gt;
+    &lt;/div&gt;
+
+    &lt;div class="input-section"&gt;
+        &lt;label for="emailField"&gt;Email Address&lt;/label&gt;
+        &lt;input type="email" class="user-input-field" id="emailField" aria-describedby="emailHelp" placeholder="Enter your email" /&gt;
+        &lt;div class="email-helper-text"&gt;
+            &lt;small id="emailHelp" class="helper-text"&gt;We’ll only use this if you want a follow-up.&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="input-section"&gt;
+        &lt;label for="feedbackMessage"&gt;Your Feedback&lt;/label&gt;
+        &lt;textarea class="user-input-field" id="feedbackMessage" rows="5" placeholder="Write your thoughts, suggestions, or concerns here..."&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+    &lt;div class="input-section"&gt;
+        &lt;label for="rating"&gt;Rate Us&lt;/label&gt;
+        &lt;select id="rating" class="user-input-field"&gt;
+            &lt;option value=""&gt;Select a rating&lt;/option&gt;
+            &lt;option value="5"&gt;⭐⭐⭐⭐⭐ - Excellent&lt;/option&gt;
+            &lt;option value="4"&gt;⭐⭐⭐⭐ - Good&lt;/option&gt;
+            &lt;option value="3"&gt;⭐⭐⭐ - Average&lt;/option&gt;
+            &lt;option value="2"&gt;⭐⭐ - Poor&lt;/option&gt;
+            &lt;option value="1"&gt;⭐ - Terrible&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div class="checkbox-section"&gt;
+        &lt;input type="checkbox" class="remember-me-checkbox" id="followUpConsent" /&gt;
+        &lt;label class="checkbox-label" for="followUpConsent"&gt;I’m okay with being contacted for follow-up&lt;/label&gt;
+    &lt;/div&gt;
+
+    &lt;button type="submit" class="submit-btn"&gt;Send Feedback&lt;/button&gt;
+&lt;/form&gt;
+
+                </nav>
+              </code>
+          </pre>
+      </div>
+  </div>
+
+
+  </div>
+
+
+</div>
+
+
+{% endblock content %}
