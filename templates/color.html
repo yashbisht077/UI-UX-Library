@@ -1,68 +1,112 @@
 {% extends "layout.html" %}
 {% block content %}
-
 <div class="container">
-  <h2 class="section-title">Headings</h2>
-  <div class="typography-row">
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+  
+  <h2 class="section-title">Button Variants</h2>
+  <div class="btn-row">
+    <button class="btn btn-primary btn-hover-darkslategray">Primary</button>
+    <button class="btn btn-secondary btn-hover-dimgray">Secondary</button>
+    <button class="btn btn-success btn-hover-lightgray">Success</button>
+    <button class="btn btn-danger btn-hover-dimgray">Danger</button>
   </div>
 </div>
 
-<div class="container">
-  <h2 class="section-title">Paragraph Styles</h2>
-  <div class="typography-row">
-    <p class="text-primary">Primary Text</p>
-    <p class="text-secondary">Secondary Text</p>
-    <p class="text-success">Success Text</p>
-    <p class="text-danger">Danger Text</p>
-    <p class="text-warning">Warning Text</p>
-    <p class="text-info">Info Text</p>
+  <div class="container">
+  <h2 class="section-title">Button Hover Effects</h2>
+  <div class="btn-row">
+    <button class="btn btn-hover-darkslategray bg-seagreen  "> Dark Slate Gray</button>
+    <button class="btn btn-hover-dimgray btn-mediumorchid "> Dim Gray</button>
+    <button class="btn btn-hover-lightgray btn-orangered">Hover: Light Gray</button>
+  </div>
+</div>
+  <div class="container">
+  
+  <h2 class="section-title">Text Color Styles</h2>
+  
+  <div class="text-row">
+    <p class="text-darkslategray ">Dark Slate Gray Text</p>
+    <p class="text-dimgray">Dim Gray Text</p>
+    <p class="text-lightgray">Light Gray Text</p>
+    <p class="text-primary">Primary Color Text</p>
   </div>
 </div>
 
-<div class="container">
-  <h2 class="section-title">Text Alignment</h2>
-  <div class="typography-row">
-    <p class="text-left">Left Aligned Text</p>
-    <p class="text-center">Center Aligned Text</p>
-    <p class="text-right">Right Aligned Text</p>
-  </div>
-</div>
 
-<div class="container">
-  <h2 class="section-title">Text Decoration</h2>
-  <div class="typography-row">
-    <p class="text-underline">Underlined Text</p>
-    <p class="text-line-through">Line Through Text</p>
-    <p class="text-italic">Italic Text</p>
-    <p class="text-bold">Bold Text</p>
-  </div>
-</div>
 
-<div class="container">
-  <h2 class="section-title">Font Sizes</h2>
-  <div class="typography-row">
-    <p class="fs-1">Extra Large Text</p>
-    <p class="fs-2">Large Text</p>
-    <p class="fs-3">Medium Text</p>
-    <p class="fs-4">Small Text</p>
-    <p class="fs-5">Extra Small Text</p>
-  </div>
-</div>
+  <div class="container">
+<div class="color-grid">
+      <div class="color-box bg-white" data-name="White"></div>
+      <div class="color-box bg-lightyellow" data-name="Light Yellow"></div>
+      <div class="color-box bg-lightgoldenrodyellow" data-name="Light Goldenrod Yellow"></div>
+      <div class="color-box bg-lightgray" data-name="Light Gray"></div>
+      <div class="color-box bg-blanchedalmond" data-name="Blanched Almond"></div>
+      <div class="color-box bg-bisque" data-name="Bisque"></div>
+  <div class="color-box bg-beige" data-name="Beige"></div>
+  <div class="color-box bg-antiquewhite" data-name="Antique White"></div>
+  
+  <div class="color-box bg-whitesmoke" data-name="White Smoke"></div>
+  <div class="color-box bg-aliceblue" data-name="Alice Blue"></div>
+  <div class="color-box bg-azure" data-name="Azure"></div>
+  <div class="color-box bg-aqua" data-name="Aqua"></div>
+  <div class="color-box bg-lightcyan" data-name="Light Cyan"></div>
+  <div class="color-box bg-lavenderblush" data-name="Lavender Blush"></div>
+  <div class="color-box bg-lightpink" data-name="Light Pink"></div>
+  <div class="color-box bg-lightsteelblue" data-name="Light Steel Blue"></div>
 
-<div class="container">
-  <h2 class="section-title">Font Weights</h2>
-  <div class="typography-row">
-    <p class="fw-light">Light Text</p>
-    <p class="fw-normal">Normal Text</p>
-    <p class="fw-bold">Bold Text</p>
-    <p class="fw-bolder">Bolder Text</p>
-  </div>
+  <div class="color-box bg-snow" data-name="Snow"></div>
+  <div class="color-box bg-palegoldenrod" data-name="Pale Goldenrod"></div>
+  <div class="color-box bg-paleturquoise" data-name="Pale Turquoise"></div>
+  <div class="color-box bg-thistle" data-name="Thistle"></div>
+  <div class="color-box bg-lightblue" data-name="Light Blue"></div>
+  <div class="color-box bg-lightgreen" data-name="Light Green"></div>
+  <div class="color-box bg-palegreen" data-name="Pale Green"></div>
+  <div class="color-box bg-aquamarine" data-name="Aquamarine"></div>
+  
+  <div class="color-box bg-seashell" data-name="Seashell"></div>
+  <div class="color-box bg-lightseagreen" data-name="Light Sea Green"></div>
+  <div class="color-box bg-powderblue" data-name="Powder Blue"></div>
+  <div class="color-box bg-lightcoral" data-name="Light Coral"></div>
+  <div class="color-box bg-lightsalmon" data-name="Light Salmon"></div>
+  <div class="color-box bg-lightskyblue" data-name="Light Sky Blue"></div>
+  <div class="color-box bg-mediumaquamarine" data-name="Medium Aquamarine"></div>
+  <div class="color-box bg-mediumseagreen" data-name="Medium Sea Green"></div>
+  
+  <div class="color-box bg-oldlace" data-name="Old Lace"></div>
+  <div class="color-box bg-palevioletred" data-name="Pale Violet Red"></div>
+  <div class="color-box bg-mediumorchid" data-name="Medium Orchid"></div>
+  <div class="color-box bg-mediumpurple" data-name="Medium Purple"></div>
+  <div class="color-box bg-mediumslateblue" data-name="Medium Slate Blue"></div>
+  <div class="color-box bg-mediumturquoise" data-name="Medium Turquoise"></div>
+  <div class="color-box bg-mediumspringgreen" data-name="Medium Spring Green"></div>
+  <div class="color-box bg-lightslategray" data-name="Light Slate Gray"></div>
+  
+  <div class="color-box bg-mintcream" data-name="Mint Cream"></div>
+  <div class="color-box bg-slategray" data-name="Slate Gray"></div>
+  <div class="color-box bg-cadetblue" data-name="Cadet Blue"></div>
+  <div class="color-box bg-steelblue" data-name="Steel Blue"></div>
+  <div class="color-box bg-royalblue" data-name="Royal Blue"></div>
+  <div class="color-box bg-blue" data-name="Blue"></div>
+  <div class="color-box bg-dodgerblue" data-name="Dodger Blue"></div>
+  <div class="color-box bg-cornflowerblue" data-name="Cornflower Blue"></div>
+
+  <div class="color-box bg-linen" data-name="Linen"></div>
+  <div class="color-box bg-deepskyblue" data-name="Deep Sky Blue"></div>
+  <div class="color-box bg-slateblue" data-name="Slate Blue"></div>
+  <div class="color-box bg-mediumblue" data-name="Medium Blue"></div>
+  <div class="color-box bg-darkslateblue" data-name="Dark Slate Blue"></div>
+  <div class="color-box bg-midnightblue" data-name="Midnight Blue"></div>
+  <div class="color-box bg-navy" data-name="Navy"></div>
+  <div class="color-box bg-darkblue" data-name="Dark Blue"></div>
+  
+  <div class="color-box bg-indigo" data-name="Indigo"></div>
+  <div class="color-box bg-darkmagenta" data-name="Dark Magenta"></div>
+  <div class="color-box bg-darkviolet" data-name="Dark Violet"></div>
+  <div class="color-box bg-darkorchid" data-name="Dark Orchid"></div>
+  <div class="color-box bg-darkslategray" data-name="Dark Slate Gray"></div>
+  <div class="color-box bg-dimgray" data-name="Dim Gray"></div>
+  <div class="color-box bg-gray" data-name="Gray"></div>
+  <div class="color-box bg-black" data-name="Black"></div>
+</div>
 </div>
 
 {% endblock content %}

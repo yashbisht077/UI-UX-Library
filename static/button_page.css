@@ -1,0 +1,110 @@
+.container {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-row, .text-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button Base Style */
+  .btn {
+    padding: 0.5rem 1.2rem;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Button Colors */
+  .btn-primary { background-color: #0d6efd; border-color: #0d6efd; }
+  .btn-secondary { background-color: #6c757d; border-color: #6c757d; }
+  .btn-success { background-color: #198754; border-color: #198754; }
+  .btn-danger { background-color: #dc3545; border-color: #dc3545; }
+  
+  /* Button Hover Variants */
+  .btn-hover-darkslategray:hover {
+    background-color: #264141;
+    border-color: #264141;
+  }
+  .btn-hover-dimgray:hover {
+    background-color: #595959;
+    border-color: #595959;
+  }
+  .btn-hover-lightgray:hover {
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+    color: #212529;
+  }
+  
+  /* Text Colors */
+  .text-darkslategray { color: #264141; }
+  .text-dimgray { color: #595959; }
+  .text-lightgray { color: #bdbdbd; }
+  .text-primary { color: #0d6efd; }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .btn-row, .text-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  /* Color Grid Section */
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .color-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .color-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .color-box::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .color-box:hover::after {
+    opacity: 1;
+  }
