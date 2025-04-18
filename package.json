@@ -1,15 +1,17 @@
 {
-  "name": "finalproject",
+  "name": "gridguru",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "docs/main.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss static/main.css -o docs/main.min.css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["css", "ui", "responsive", "library", "grid"],
+  "author": "Your Name", 
+  "license": "MIT", 
+  "description": "A custom CSS UI library built from scratch",
+  "files": [
+    "docs/main.min.css"
+  ],
   "devDependencies": {
     "cssnano": "^7.0.6",
     "postcss-cli": "^11.0.1",
