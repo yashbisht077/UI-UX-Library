@@ -12,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "cssnano": "^7.0.6",
-    "postcss-cli": "^11.0.1"
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0"
   }
 }
